@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @auth.login %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @auth.password %>
+</p>
+
+<%= link_to 'Edit', edit_auth_path(@auth) %> |
+<%= link_to 'Back', auths_path %>

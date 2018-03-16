@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @account_history.account_id %>
+</p>
+
+
+
+<p>
+  <strong>Account No:</strong>
+ <%= @account_history.account.account_number %>
+</p>
+
+
+<p>
+  <strong>Credit rating:</strong>
+  <%= @account_history.credit_rating %>
+</p>
+
+
+<%= link_to 'Edit', edit_account_history_path(@account_history) %> |
+<%= link_to 'Back', account_histories_path %>

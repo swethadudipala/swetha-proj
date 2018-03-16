@@ -1,0 +1,20 @@
+<div id="menu">
+    <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
+    <ul>
+      <li><a href="/online_training/Python">Home</a></li>
+      <li><a href="#" class="active">News</a></li>
+      <li><a href="/blog/my_blog">Blog</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><% if admin_signed_in? %>
+    <li>
+      <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %>        
+    </li>
+         <% else %>
+    <li>
+      <%= link_to('Login', new_admin_session_path)  %>  
+  </li>
+        <% end %></li>
+      <li><a href="/contacts/new">Contact</a></li>
+    </ul>
+  </div>
+  <div id="menubottom"></div>
